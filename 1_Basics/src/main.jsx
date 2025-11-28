@@ -19,7 +19,7 @@ const anotherElement = (
 //   children: "Click to visit Google!"
 // }
 
-// Original syntax we can use in React!
+// Original syntax we can use in React! (Babel Transpiler)
 const reactElement = React.createElement(
   'a',
   {href:'https://www.google.com', target:'_blank'},
