@@ -1,6 +1,6 @@
 ## Theory
 
-useCallback - It is a React Hook that lets you cache a function definition between re-renders.
+### useCallback - It is a React Hook that lets you cache a function definition between re-renders.
 
 ```js
 const passwordGenerator = useCallback(() => {
@@ -26,18 +26,18 @@ React Compiler automatically memoizes values and functions, reducing the need fo
 
 ###### *Memoization is a programming optimization technique that speeds up programs by storing (caching) the results of expensive function calls and returning the cached result when the same inputs occur again*
 
-useEffect - It is a React Hook that lets you extract non-reactive logic from your Effects into a reusable function called an Effect Event.
+### useEffect - It is a React Hook that lets you extract non-reactive logic from your Effects into a reusable function called an Effect Event.
 
 ```js
 useEffect(() => {
   passwordGenerator()
 }, [length, numAllowed, charAllowed, passwordGenerator])
 ```
-useRef - It is a React Hook that lets you reference a value that’s not needed for rendering.
+### useRef - It is a React Hook that lets you reference a value that’s not needed for rendering.
 
 ```js
 let passwordRef = useRef(null)
-
+// CODE...
 <input
   type="text"
   value={password}
