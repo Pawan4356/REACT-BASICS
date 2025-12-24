@@ -8,8 +8,8 @@ function Login() {
   const { setUser } = useContext(UserContext)
 
   const submit = (e) => {
-    e.preventDefault()
-    setUser({ userName, password })
+    e.preventDefault() // Prevents page refresh
+    setUser({ userName, password }) // Storing the user info in global context
   }
 
   return (
